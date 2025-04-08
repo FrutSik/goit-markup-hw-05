@@ -476,29 +476,29 @@
             </li>
           </ul>
         </div>
-        <form class="footer-form">
+        <div class="footer-subscrube-box">
           <p class="footer-form-text">Subscribe</p>
-          <div class="footer-box">
-            <label aria-label="footer-email" class="footer-label">
+          <form class="footer-subscrube-form">
+            <label aria-label="footer-email" class="footer-label-box">
               <input
-                class="footer-input"
+                class="footer-subscrube-input"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="footer-btn">
+            <button type="submit" class="footer-subscrube-btn">
               Subscribe
               <svg class="footer-btn-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame-3"></use>
               </svg>
             </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="owerlay">
+    <div class="owerlay is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -516,7 +516,7 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
               </svg>
             </div>
@@ -549,30 +549,30 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="user-text" class="modal-label">Comment</label>
+          <div class="modal-field-teaxtarea">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               class="modal-textarea"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-field-checkbox">
             <input
               type="checkbox"
-              name="policy"
-              id="policy"
+              name="user-privacy"
+              id="user-privacy"
               class="modal-check visually-hidden"
               value="true"
             />
-            <label for="policy" class="modal-check-text">
+            <label for="user-privacy" class="modal-check-text">
               <span class="modal-checkbox">
                 <svg class="modal-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Check"></use>
                 </svg> </span
               >I accept the terms and conditions of the&nbsp;
-              <a href="">Privacy Policy</a></label
+              <a href="" class="modal-checkbox-link">Privacy Policy</a></label
             >
           </div>
           <button type="submit" class="modal-btm">Send</button>
